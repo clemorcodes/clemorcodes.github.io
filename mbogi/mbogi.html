@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/97a767bd83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="mbogi.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Mbogi</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="mbogi.html">
+        <img
+          src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png"
+          alt="logo"
+        />
+      </a>
+      <a class="browse-head" href="trial.html">Browse Celebrities</a>
+      <div class="toggle"></div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="login fast-transition">Login</a>
+          </li>
+          <li>
+            <a href="#" class="active fast-transition">Register</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="clearfix"></div>
+    </header>
+
+    <div class="wrapper">
+      <div class="container">
+        <h2>How it works</h2>
+        <div class="three-column">
+          <div class="column">
+            <i class="fas fa-search first"></i>
+            <p>
+              Browse through all celebrities and find one you want to request a
+              video shout-out from.
+            </p>
+          </div>
+          <div class="column">
+            <i class="far fa-comment second"></i>
+            <p>
+              Tell the celebrity what you want – birthday wish for your friend,
+              congratulatory note for your colleague or simply a shout-out for
+              yourself.
+            </p>
+          </div>
+          <div class="column">
+            <i class="fas fa-video third"></i>
+            <p>
+              The celebrity will read your request and create a short video just
+              for you! Download, share, show-off!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <h2>Featured Celebrities</h2>
+        <div class="three-column">
+          <div class="column">
+            <a href="#"
+              ><img
+                src="https://mbogi.co/media/profileimages/dj_shiti_mbogi.jpg"
+                alt="dj-shiti"
+            /></a>
+            <div class="names">
+              <p>Dj Shiti</p>
+            </div>
+          </div>
+          <div class="column">
+            <a href="#">
+              <img
+                src="https://mbogi.co/media/profileimages/WhatsApp_Image_2020-07-25_at_07.13.17.jpeg"
+                alt="Ambition"
+            /></a>
+            <div class="names">
+              <p>Ambition</p>
+            </div>
+          </div>
+          <div class="column">
+            <a href="#"
+              ><img
+                src="https://mbogi.co/media/profileimages/WhatsApp_Image_2020-05-01_at_12.36.20_PM.jpeg"
+                alt="Alice Kamande"
+            /></a>
+            <div class="names">
+              <p>Alice Kamande</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="browse">
+        <a href="https://mbogi.co/browse-celebrities/"
+          >Browse all celebrities</a
+        >
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="inner-footer">
+        <div class="logo-footer">
+          <a href="https://mbogi.co/"
+            ><img
+              src="https://mbogi.co/static/images/logo_transparent.01845e56f390.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contactinfo@mbogi.co</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p><i class="far fa-copyright"></i>Mbogi.2020</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".toggle").click(function () {
+          $(".toggle").toggleClass("active");
+          $("nav").toggleClass("active");
+        });
+      });
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
