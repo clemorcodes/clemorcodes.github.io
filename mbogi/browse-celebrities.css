@@ -21,7 +21,6 @@ header {
   max-width: 1400px;
   margin: 0 auto;
   padding: 10px 0 30px 0;
-
   box-sizing: border-box;
   display: block;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -202,7 +201,7 @@ img {
 }
 @media screen and (max-width: 728px) {
   #browse-head {
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 18px;
     color: #2b2d2e;
   }
@@ -218,10 +217,11 @@ img {
   .three-column {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-  }
-  .column {
     width: 100%;
+  }
+  .three-column .column {
+    flex-basis: 100%;
+    width: 100% !important;
   }
   .category {
     width: 100%;
