@@ -22,7 +22,7 @@ header {
   padding: 10px 0 30px 0;
 
   box-sizing: border-box;
-  display: block;
+  display: inline-block;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .sticky {
@@ -42,24 +42,26 @@ nav,
   width: 40px;
 }
 
-.browse-head {
-  margin-left: 100px;
-  margin-top: 30px;
+#browse-head {
   font-size: 18px;
+  margin: 10px 0 10px 100px;
+  padding: 10px 0;
   color: #2b2d2e;
+  display: inline-block;
 }
-.browse-head:hover {
+#browse-head:hover {
   color: #007bff;
 }
 
 nav {
-  float: right;
   margin-right: 30px;
+  display: flex;
+  float: right;
 }
 
-nav ul {
+
+nav ul  {
   margin: 0;
-  padding: 0;
   display: flex;
 }
 nav ul li a {
@@ -174,16 +176,15 @@ nav ul li a.login {
   margin: 50px auto;
 }
 
-.image-column {
+.column {
   width: 30%;
   margin: 1.66%;
 }
 .column img {
   width: 100%;
 }
-.image-column .names {
+.column .names {
   height: auto;
-
   background-color: #f2f2f2;
   display: flex;
 }
@@ -233,18 +234,22 @@ nav ul li a.login {
 .footer-nav ul li a:hover {
   color: #007bff;
 }
+@media screen and (max-width: 440px) {
+  #browse-head {
+    margin-left: 20px;
+  }
+}
 
 @media screen and (max-width: 728px) {
   .three-column .column {
     flex-basis: 100%;
-    margin: 20px 50px;
+    margin: 0 auto;
   }
   .three-column .column:nth-child(1) {
     margin-top: 0;
   }
-  .browse-head {
-    margin-left: 80px;
-    margin-top: 30px;
+  #browse-head {
+    margin-left: 50px;
     font-size: 18px;
     color: #2b2d2e;
   }
@@ -254,8 +259,14 @@ nav ul li a.login {
   }
 
   @media screen and (max-width: 728px) {
+    .three-column {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
     .three-column .column {
       flex-basis: 100%;
+      width: 100% !important;
     }
   }
   @media screen and (max-width: 728px) {

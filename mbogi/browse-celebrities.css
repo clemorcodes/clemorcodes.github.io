@@ -31,7 +31,7 @@ header {
 }
 .logo,
 nav,
-.browse-head {
+#browse-head {
   display: inline-block;
 }
 
@@ -43,13 +43,14 @@ nav,
   width: 40px;
 }
 
-.browse-head {
-  margin-left: 100px;
-  margin-top: 30px;
+#browse-head {
   font-size: 18px;
+  margin: 10px 0 10px 100px;
+  padding: 10px 0;
   color: #2b2d2e;
+  display: inline-block;
 }
-.browse-head:hover {
+#browse-head:hover {
   color: #007bff;
 }
 
@@ -194,10 +195,14 @@ img {
 .footer-nav ul li a:hover {
   color: #007bff;
 }
+@media screen and (max-width: 440px) {
+  #browse-head {
+    margin-left: 20px;
+  }
+}
 @media screen and (max-width: 728px) {
-  .browse-head {
-    margin-left: 80px;
-    margin-top: 30px;
+  #browse-head {
+    margin-left: 50px;
     font-size: 18px;
     color: #2b2d2e;
   }
@@ -297,7 +302,5 @@ img {
     margin-left: 50px;
     color: #37b5ff;
   }
-  .browse-head {
-    padding-right: px;
-  }
+  
 }
