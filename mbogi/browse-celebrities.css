@@ -74,6 +74,7 @@ nav ul li a.active {
   text-transform: uppercase;
   margin-left: 10px;
   transition: 0.5s;
+  border-radius: 5px;
 }
 nav ul li a.login {
   background: #ffffff;
@@ -81,6 +82,7 @@ nav ul li a.login {
   border: 1px solid #37b5ff;
   margin-left: 10px;
   color: #37b5ff;
+  border-radius: 5px;
 }
 .fast-transition {
   position: relative; /* For positioning the pseudo-element */
@@ -300,13 +302,15 @@ img {
   }
   
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
   #browse-head {
-    margin-left: 5px !important;
+    margin-left: 40px !important;
   }
   .logo {
-    margin-left: 0;
+    margin-left: 10px;
     float: left;
   }
+  .toggle {
+    padding-right: 20px;
+  }
 }
-

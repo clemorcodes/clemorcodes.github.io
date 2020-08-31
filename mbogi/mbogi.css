@@ -44,7 +44,7 @@ nav,
 
 #browse-head {
   font-size: 18px;
-  margin: 10px 0 10px 100px;
+  margin: 10px 0 10px 80px;
   padding: 10px 0;
   color: #2b2d2e;
   display: inline-block;
@@ -75,6 +75,7 @@ nav ul li a.active {
   text-transform: uppercase;
   margin-left: 10px;
   transition: 0.5s;
+  border-radius: 5px;
 }
 nav ul li a.login {
   background: #ffffff;
@@ -82,6 +83,7 @@ nav ul li a.login {
   border: 1px solid #37b5ff;
   margin-left: 10px;
   color: #37b5ff;
+  border-radius: 5px;
 }
 .fast-transition {
   position: relative; /* For positioning the pseudo-element */
@@ -160,6 +162,7 @@ nav ul li a.login {
   margin-top: 50px;
   margin-bottom: 50px;
   font-size: 18px;
+  line-height: 30px;
   font-weight: normal;
 }
 
@@ -221,6 +224,9 @@ nav ul li a.login {
   justify-content: space-around;
   align-items: center;
 }
+.logo-footer {
+  margin-left: 0;
+}
 .logo-footer img {
   width: 40px;
 }
@@ -236,6 +242,9 @@ nav ul li a.login {
 }
 
 @media screen and (max-width: 728px) {
+  .wrapper {
+    width: 100%;
+  }
   .three-column {
     display: flex;
     flex-direction: column;
@@ -249,7 +258,7 @@ nav ul li a.login {
     margin-top: 0;
   }
   #browse-head {
-    margin-left: 20px;
+    margin-left: 50px;
     font-size: 18px;
     color: #2b2d2e;
   }
@@ -318,15 +327,24 @@ nav ul li a.login {
     margin-left: 50px;
     color: #37b5ff;
   }
+  .how-it-works .column {
+    padding-bottom: 20px;
+  }
+  .how-it-works .column:last-child {
+    padding-bottom: 0;
+  }
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 440px) {
   #browse-head {
-    margin-left: 5px !important;
+    margin-left: 40px !important;
   }
   .logo {
-    margin-left: 0;
+    margin-left: 10px;
     float: left;
+  }
+  .toggle {
+    padding-right: 20px;
   }
 }
 
