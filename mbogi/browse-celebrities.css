@@ -194,11 +194,7 @@ img {
 .footer-nav ul li a:hover {
   color: #007bff;
 }
-@media screen and (max-width: 440px) {
-  #browse-head {
-    margin-left: 20px;
-  }
-}
+
 @media screen and (max-width: 728px) {
   #browse-head {
     margin-left: 20px;
@@ -304,3 +300,13 @@ img {
   }
   
 }
+@media screen and (max-width: 340px) {
+  #browse-head {
+    margin-left: 5px !important;
+  }
+  .logo {
+    margin-left: 0;
+    float: left;
+  }
+}
+
