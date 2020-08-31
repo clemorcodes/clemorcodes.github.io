@@ -243,7 +243,7 @@ nav ul li a.login {
   }
   .three-column .column {
     flex-basis: 100%;
-    margin: 0 auto;
+    width: 100%;
   }
   .three-column .column:nth-child(1) {
     margin-top: 0;
@@ -320,12 +320,13 @@ nav ul li a.login {
   }
 }
 
- 
-    
-
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 340px) {
   #browse-head {
-    margin-left: 20px;
+    margin-left: 5px !important;
+  }
+  .logo {
+    margin-left: 0;
+    float: left;
   }
 }
 
