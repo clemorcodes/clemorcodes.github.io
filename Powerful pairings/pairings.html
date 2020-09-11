@@ -48,7 +48,14 @@
             color: #323639;
             font-weight: 700;
         }
-            /* Remove space around the email design. */
+        @media screen and (max-width: 480px) {
+            #emailContainer {
+                width: 100% !important;
+            }
+            .texts {
+                padding: 0 50px !important;
+            }
+        }
 
 
 
@@ -83,8 +90,8 @@
                             </tr>
                             <!--FirstText-->
                             <tr>
-                                <td align="center" width="574" style="padding:0;">
-                                    <p align="left" style=""><span class="mainText">Research shows that eating family meals improves
+                                <td class="texts" align="left" width="574" style="padding:0;">
+                                    <p align="" style=""><span class="mainText">Research shows that eating family meals improves
                                         cohesion, communication, and relationships, helping us
                                         celebrate the good times and better manage challenges. </span>Research also shows that increasing the frequency of family
                                         meals is linked to many benefits including higher grades, better
@@ -99,7 +106,7 @@
                             </tr>
                             <!--second-text-->
                             <tr>
-                                <td align="" style="padding: 0;" class="benefits">
+                                <td class="texts" align="" style="padding: 0;" class="benefits">
                                     <p style="">Moreover, people who frequently cook meals at home eat
                                         healthier and consume fewer calories.6
                                          As an added bonus,
@@ -119,7 +126,7 @@
 
                             <!--third-text-->
                             <tr>
-                                <td  align=""  style="padding: 0;">
+                                <td class="texts"  align=""  style="padding: 0;">
                                     <p style="" class="mainText">Powerful Pairings, like pork and pulses, are an ingenious,
                                         delicious combination that adds important nutrients to<br>
                                         help us better manage health challenges.6</p>
@@ -134,8 +141,8 @@
                             </tr>
                             <!--fourth-text-->
                             <tr>
-                                <td align="left" style="padding: 0;">
-                                    <p style="">Pork is a complete protein that packs a powerful nutritional punch,
+                                <td class="texts" align="left" style="padding: 0;">
+                                    <p style=";">Pork is a complete protein that packs a powerful nutritional punch,
                                         providing all nine essential amino acids7
                                          including leucine, which
                                         helps rebuild and repair muscles.8,9 </p>
