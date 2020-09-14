@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--[if !mso]><!-->
@@ -29,7 +29,7 @@
         
         .mainText {
             color: #323639;
-            font-weight: 600;
+            font-weight: 700;
         }
         a {
             color: #525659;
@@ -47,13 +47,11 @@
             line-height: 21pt;
             color: #525659;
         }
-        .yes , .percent {
-            color: #323639;
-            font-weight: 700;
-        }
+       
         sup {
             vertical-align: baseline;
             position: relative;
+            font-size: 14px;
             top: -0.4em;
         }
         .logos a {
@@ -63,6 +61,8 @@
         @media screen and (max-width: 480px) {
             #emailContainer {
                 width: 100% !important;
+                max-width: 574px !important;
+                height: auto !important;
             }
             .texts {
                 width: 100% !important;
@@ -71,13 +71,19 @@
             p {
                 width: 100% !important;
             }
+            .images{
+                width: 100% !important;
+                max-width:574px !important;
+                height:auto !important;
+            }
             .emailImage{
-            height:auto !important;
-            max-width:574px !important;
-            width: 100% !important;
+                width: 100% !important;
+                max-width:574px !important;
+                height:auto !important;
             }
             .mobilefullwidth {
                 width: 100% !important;
+                padding: 0 !important;
                 height: auto !important;
             }
             br {
@@ -99,20 +105,20 @@
                         <td align="center" valign="top">
                             <!--This is where my content goes.-->
                             <tr>
-                                <td align="center" style="padding-bottom: 0;">
+                                <td class="images" align="center" style="padding-bottom: 0;">
                                   <img 
                                     width="574" src="https://i.ibb.co/MhJBt5s/Main-Header.jpg"
                                     height="auto"
                                     border="0"
                                     style="display: block; max-width: 100%;"
-                                    class="mobilefullwidth emailImage"
+                                    class="mobilefullwidth"
                                     alt="header-image"
                                   />
                                 </td>
                             </tr>
                             <!--firstImage-->
                             <tr>
-                                <td align="center" style="padding-top: 0 0 0 0;">
+                                <td class="images" align="center" style="padding-top: 0 0 0 0;">
                                     <img width="574" height="auto" class="emailImage" src="https://i.ibb.co/7k7g1Cw/Header-1.jpg" alt="Family Meals are the
                                     Foundation for a Healthy Nation ">
                                 </td>
@@ -129,7 +135,7 @@
                             </tr>
                             <!--second-image-->
                             <tr>
-                                <td align="center" style="padding-top: 0; padding-bottom: 0;">
+                                <td class="images" align="center" style="padding-top: 0; padding-bottom: 0;">
                                     <img width="574" height="auto" class="emailImage" src="https://i.ibb.co/LS29Mnj/Image-1.jpg" alt="Family image">
                                 </td>
                             </tr>
@@ -148,7 +154,7 @@
                             
                             <!--third-image-->
                             <tr>
-                                <td align="center" width="100%">
+                                <td class="images" align="center" width="100%">
                                     <img width="574" style="max-width: 574px;" height="auto" class="emailImage" src="https://i.ibb.co/ncBw0DN/Header-2.jpg" alt="Power Up Your Meals
                                     with Pork + Pulses">
                                 </td>
@@ -165,7 +171,7 @@
                             </tr>
                             <!--fourth-image-->
                             <tr>
-                                <td align="center" style="padding-top: 30px; padding-bottom: 0; background-color: #FAFAD2;">
+                                <td class="images" align="center" style="padding-top: 30px; padding-bottom: 0; background-color: #FAFAD2;">
                                     <img width="574" height="auto" class="emailImage" src="https://i.ibb.co/vjyFztH/Image-2.png" alt="Pork image">
                                 </td>
                             </tr>
@@ -185,7 +191,7 @@
                             </tr>
                             <!--fifth-image-->
                             <tr>
-                                <td align="center" style="padding-top: 50px; padding-bottom: 0;">
+                                <td class="images" align="center" style="padding-top: 50px; padding-bottom: 0;">
                                     <img width="574" height="auto" class="emailImage" src="https://i.ibb.co/tmDT2dw/Header-3.jpg" alt="Stay Strong with Family Meals">
                                 </td>
                             </tr>
@@ -200,14 +206,14 @@
                             </tr>
                              <!--bottom-image-CTA-image-->
                              <tr>
-                                <td valign="top" align="center" style="padding-top: 10px; padding-bottom: 0;">
+                                <td class="images" valign="top" align="center" style="padding-top: 10px; padding-bottom: 0;">
                                     <a target="_blank" href="http://go.powerfulpairings.com/powerfulpairings"><img width="574" height="auto" class="emailImage" src="https://i.ibb.co/BTn4f98/Bottom-Image-CTA.jpg" alt="Visit Powerful pairings website">
                                     </a>
                                 </td>
                             </tr>
                             
                             <!--logos-->
-                            <tr class="logos">
+                            <tr class="logos images">
                                 <td align="center" style="padding-top: 10px; padding-bottom: 0;">
                                     <a width="110.5" target="_blank" href="https://www.pork.org/"><img src="https://i.ibb.co/vxZ6X0m/Pork-Logo.jpg" alt="Bottom-image"></a>
                                     <a width="110.5" target="_blank" href="https://www.usapulses.org/"><img src="https://i.ibb.co/WzzLtdx/Pulses-Logo.jpg" alt="Bottom-image"></a>
@@ -234,7 +240,7 @@
                                         <li><p style="margin: 2px;">Rieu I, Balage M, Sornet C, et al. Leucine supplementation improves muscle protein synthesis in elderly men
                                             independently of hyperaminoacidaemia. J Physiol. 2006;575(Pt 1):305-315. doi:10.1113/jphysiol.2006.110742</p></li>
                                         <li><p style="margin: 2px;">Strasser, B., Volaklis, K., Fuchs, D., & Burtscher, M. (2018). Role of Dietary Protein and Muscular Fitness on
-                                            Longevity and Aging. Aging and disease, 9(1), 119–132. https://doi.org/10.14336/AD.2017.0202</p></li>
+                                            Longevity and Aging. Aging and disease, 9(1), 119–132. <a href="https://doi.org/10.14336/AD.2017.0202" target="_blank">https://doi.org/10.14336/AD.2017.0202</a></p></li>
                                         <li><a target="_blank" style="margin: 2px;" href="https://www.choosemyplate.gov/eathealthy/protein-foods/protein-foods-nutrients-health">https://www.choosemyplate.gov/eathealthy/protein-foods/protein-foods-nutrients-health</a></li>
                                         <li><a target="_blank"style="margin: 2px;" href="https://www.choosemyplate.gov/eathealthy/vegetables/vegetables-beans-and-peas">https://www.choosemyplate.gov/eathealthy/vegetables/vegetables-beans-and-peas</a></li>
                                     </ol>
