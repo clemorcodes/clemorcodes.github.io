@@ -336,6 +336,9 @@ nav ul li a.login {
 }
 
 @media screen and (max-width: 440px) {
+  .three-column {
+    padding-right: 10px;
+  }
   #browse-head {
     margin-left: 40px !important;
   }
